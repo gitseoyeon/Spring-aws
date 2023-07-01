@@ -16,12 +16,21 @@ repositories {
 }
 
 dependencies {
+
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	runtimeOnly 'com.h2database:h2'
     testImplementation 'junit:junit:4.13.1'
+	testImplementation 'org.projectlombok:lombok:1.18.26'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
+
+
 }
 
 tasks.named('test') {
