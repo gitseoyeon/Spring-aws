@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Getter // 클래스 내 모든 필드의 Getter 메서드 자동 생성 . 차후 변경시 복잡성을 막기위해 Setter 메서드는 안만든다.
 @NoArgsConstructor // 기본 생성자 자동 추가
 @Entity // 테이블과 링크될 클래스
-public class Posts {
+public class Posts extends BaseTimeEntity{
     @Id // 해당 태이블의 PK 필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 의 생성 규칙을 나타냄
     private Long id;
@@ -32,4 +32,5 @@ public class Posts {
         this.title = title;
         this.content = content;
     }
+
 }
