@@ -1,9 +1,11 @@
 package com.spring.springpractice.domain.posts;
 
-import jakarta.persistence.*;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 @Getter // 클래스 내 모든 필드의 Getter 메서드 자동 생성 . 차후 변경시 복잡성을 막기위해 Setter 메서드는 안만든다.
 @NoArgsConstructor // 기본 생성자 자동 추가
