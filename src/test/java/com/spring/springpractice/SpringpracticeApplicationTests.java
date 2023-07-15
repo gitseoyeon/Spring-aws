@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @EnableJpaAuditing
 @SpringBootTest
-class SpringpracticeApplicationTests {
+public class SpringpracticeApplicationTests {
 
 	@Test
 	void contextLoads() {
